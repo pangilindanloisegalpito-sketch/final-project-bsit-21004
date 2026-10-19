@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | ITE 1 Project</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <!-- JS Application 1: Dark / Light Mode -->
+        <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- JS Application 2: Current Date & Time Bar -->
+  <div class="datetime-bar">
+    <span id="current-datetime">Loading date & time...</span>
+  </div>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="home-content">
+        <span class="greeting-badge" id="welcome-msg">Welcome to my site!</span>
+        <h1>Hello, I'm <span class="highlight">Pangilin, Dan Loise G.</span></h1>
+        <p class="intro-text">Welcome to my portfolio for ITE 1! Here you can explore my background, technical skills, and coursework activities.</p>
+        <div class="home-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <!-- JS Application 3: Alert Button -->
+          <button id="alert-btn" class="btn btn-secondary">Click Me!</button>
+        </div>
+      </div>
+      <div class="home-image">
+        <img src="image/profile.jpg" alt="Profile Image" class="profile-img">
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-card">
+          <h3><i class="fa-solid fa-user"></i> Personal Information</h3>
+          <p>I am a student currently taking up Information Technology. I am passionate about technology, design, and problem-solving.</p>
+        </div>
+        <div class="about-card">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <p><strong>Course:</strong> BS Information Technology</p>
+          <p><strong>Subject:</strong> ITE 1</p>
+          <p><strong>Section: </strong>BSIT 21004</p>
+        </div>
+        <div class="about-card">
+          <h3><i class="fa-solid fa-heart"></i> Interests</h3>
+          <p>Web development, UI design, cycling, gaming, and exploring new digital tools.</p>
+        </div>
+      </div>
+
+      <!-- JS Application 4: Show / Hide & Read More Button -->
+      <div class="extra-info-container">
+        <button id="toggle-info-btn" class="btn btn-outline">Read More About My Journey</button>
+        <div id="extra-info" class="extra-info content-hidden">
+          <p>Throughout this term in ITE 1, I learned the core fundamentals of web structure using HTML5, layout design and animations using CSS3, and practical scripting with JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Technical Skills</h3>
+          <ul class="skill-list">
+            <li><i class="fa-brands fa-html5"></i> HTML5 (Semantic Structure)</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS (basic layouting)</li>
+            <li><i class="fa-brands fa-js"></i> JavaScript Pre-Basic</li>
+            <li><i class="fa-solid fa-code"></i> Troubleshooting & Debugging</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Personal Skills</h3>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-check-double"></i> Problem Solving</li>
+            <li><i class="fa-solid fa-clock"></i> Time Management</li>
+            <li><i class="fa-solid fa-comments"></i> Communication</li>
+            <li><i class="fa-solid fa-lightbulb"></i> Adaptability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Cards) -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="section-subtitle">Activities completed from prelim to final (excluding absent dates).</p>
+      
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img src="Image/project1.jpg" alt="Prelim Activity" class="project-img">
+          <div class="project-body">
+            <h3>Prelim Activity: HTML Webpage</h3>
+            <p>A basic static webpage. Usually i forgot to put a picture in this activity, and also the most important css linking.</p>
+            <a href="https://pangilindanloisegalpito-sketch.github.io/Pangilin-Dan-Loise-G./" class="btn btn-card">View Activity</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="Image/project2.jpg" alt="Midterm Activity" class="project-img">
+          <div class="project-body">
+            <h3>CSS Activity: Happy Teacher's day</h3>
+            <p>A rewarding letter to someone's teacher. Who would it be. This was graded during finals.</p>
+            <a href="https://pangilindanloisegalpito-sketch.github.io/Teacher-s-day/" class="btn btn-card">View Activity</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <img src="Image/project3.jpg" alt="Final Activity" class="project-img">
+          <div class="project-body">
+            <h3>Final Activity: Story Book</h3>
+            <p>Implementing a interactive storybook with multiple layout and navigation.</p>
+            <a href="https://pangilindanloisegalpito-sketch.github.io/Story-Book/" class="btn btn-card">View Activity</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p class="section-subtitle">Reach out through any of the details below!</p>
+      
+      <div class="contact-cards">
+        <div class="contact-card">
+          <i class="fa-solid fa-phone contact-icon"></i>
+          <h3>Phone Number</h3>
+          <p>+63 991 043 5723</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope contact-icon"></i>
+          <h3>Email Address</h3>
+          <p>pangilin.danloise.galpito@email.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS Application 5: Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Danloise Galpito. All Rights Reserved. | ITE 1 Portfolio Project</p>
+    </div>
+  </footer>
+
+  <!-- Link to External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
